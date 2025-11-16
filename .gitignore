@@ -1,0 +1,83 @@
+# PowerShell SysAdmin Toolkit - .gitignore
+
+# Logs
+Logs/
+*.log
+*.transcript
+
+# Credentials and sensitive data
+*.credential
+*.cred
+credentials.json
+secrets.json
+.env
+*.pfx
+*.p12
+
+# Configuration files that may contain sensitive data
+config.json
+settings.json
+appsettings.json
+
+# Output and temporary files
+Output/
+Temp/
+tmp/
+*.tmp
+*.temp
+
+# Reports (may contain sensitive data)
+Reports/*.csv
+Reports/*.html
+Reports/*.json
+Reports/*.xlsx
+# Keep the Reports directory structure
+!Reports/.gitkeep
+
+# PowerShell debugging
+.vscode/
+*.ps1xml
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.directory
+
+# Archives
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Test results
+TestResults/
+*.trx
+
+# Module builds
+build/
+dist/
+*.nupkg
+
+# PSScriptAnalyzer settings (uncomment if you want to ignore)
+# PSScriptAnalyzerSettings.psd1
+
+# Personal notes
+NOTES.md
+TODO.md
+*.local.*
